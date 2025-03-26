@@ -1,8 +1,45 @@
-const heading1 = React.createElement("h1", { id: "title" }, "Heading 1");
-const heading2 = React.createElement("h2", { id: "title" }, "Heading 2");
-const container = React.createElement("div", { id: "container" }, [
-  heading1,
-  heading2,
-]);
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+/*
+Header
+  Title(logo)
+  NavItem(Right side)
+  Cart
+Body
+  Search Bar
+  RestroList
+     Lot of RestraurentCard
+        Image
+        Name
+        Rating
+        Cousine
+Footer
+  Links 
+  Copyright        
+
+*/
+
+const title = (
+  <h1 id="title" key="h1">
+    This is a react element title!
+  </h1>
+);
+
+const Title = () => {
+  return <h1 id="title">This is a functional title</h1>;
+};
+
+const Container = () => {
+  return (
+    <div>
+      {title}
+      <Title />
+      <h1>Heading one</h1>
+      <h2>Heading two</h2>
+    </div>
+  );
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);
+root.render(<Container />);
