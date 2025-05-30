@@ -31,8 +31,21 @@
 }
 
 .restaurant-list {
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  display: grid;
+}
+
+.restraurent-card {
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex-direction: column;
+  height: 300px;
   display: flex;
+  overflow: hidden;
 }
 
 .search-bar {

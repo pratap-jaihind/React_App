@@ -31,10 +31,32 @@
     
 }
 
-.restaurant-list {
+/* .restaurant-list {
     display: flex;
     flex-wrap: wrap;
+  } */
+
+.restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* responsive grid */
+    gap: 10px; /* spacing between items */
+    padding: 10px;
   }
+
+  .restraurent-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 300px; /* fixed height */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* padding: 16px; */
+    box-sizing: border-box;
+  }
+  
+  
 
 .search-bar{
     display: flex;
