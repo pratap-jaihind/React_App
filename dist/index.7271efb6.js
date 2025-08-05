@@ -34075,7 +34075,7 @@ const Body = ()=>{
     const [searchTxt, setSearchTxt] = (0, _react.useState)("");
     const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
     const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
-    return allRestaurants === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    return allRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
         lineNumber: 36,
         columnNumber: 5
@@ -34237,31 +34237,43 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Shimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "restaurant-list",
-            children: [
-                Array(10).fill().map((_, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "shimmer-card"
-                    }, index, false, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "restaurant-list",
+        children: Array(10).fill().map((_, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "shimmer-img shimmer"
+                    }, void 0, false, {
                         fileName: "src/components/Shimmer.js",
                         lineNumber: 8,
                         columnNumber: 13
-                    }, undefined)),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card"
-                }, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 10,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Shimmer.js",
-            lineNumber: 4,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false);
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "shimmer-title shimmer"
+                    }, void 0, false, {
+                        fileName: "src/components/Shimmer.js",
+                        lineNumber: 9,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "shimmer-text shimmer"
+                    }, void 0, false, {
+                        fileName: "src/components/Shimmer.js",
+                        lineNumber: 10,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, index, true, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 7,
+                columnNumber: 11
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/components/Shimmer.js",
+        lineNumber: 3,
+        columnNumber: 5
+    }, undefined);
 };
 _c = Shimmer;
 exports.default = Shimmer;

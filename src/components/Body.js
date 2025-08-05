@@ -32,7 +32,7 @@ const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
 
-  return allRestaurants === 0 ? (
+  return allRestaurants.length === 0 ? (
     <Shimmer />
   ) : (
     <>
