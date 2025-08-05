@@ -1,7 +1,6 @@
 {
   "name": "foodvilla",
   "version": "1.0.0",
-  "description": "This is a React app built with Parcel",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --no-cache"
