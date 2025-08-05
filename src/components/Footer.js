@@ -1,5 +1,10 @@
 const Footer = () => {
-  return <h1>This is Footer</h1>;
+  return (
+    <div className="footer-container">
+      <p>&copy; {new Date().getFullYear()} Food Villa. All rights reserved.</p>
+      <p>Made with ❤️ by Food Villa Team</p>
+    </div>
+  );
 };
 
 export default Footer;

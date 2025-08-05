@@ -33,7 +33,11 @@ const RestaurantMenu = () => {
 
   return (
     <div className="restaurant-menu">
-      <img src={IMG_CDN_URL + cloudinaryImageId} alt="restro" />
+      <img
+        className="restaurant-img"
+        src={IMG_CDN_URL + cloudinaryImageId}
+        alt="restro"
+      />
       <h2>{name}</h2>
       <h3>{avgRating}</h3>
       <h4>{cuisines?.join(", ")}</h4>
