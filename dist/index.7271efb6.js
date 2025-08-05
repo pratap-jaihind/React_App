@@ -34406,38 +34406,48 @@ var _s = $RefreshSig$();
 const Error = ()=>{
     _s();
     const error = (0, _reactRouterDom.useRouteError)();
-    console.log;
-    console.log(error);
+    console.error("Route Error:", error);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "error-container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Oops!"
+                children: "\uD83D\uDEAB Oops!"
+            }, void 0, false, {
+                fileName: "src/components/Error.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Sorry, the page you’re looking for doesn’t exist or an error occurred."
             }, void 0, false, {
                 fileName: "src/components/Error.js",
                 lineNumber: 10,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Sorry, the page you are looking for does not exist."
-            }, void 0, false, {
-                fileName: "src/components/Error.js",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: [
-                    "Error: ",
-                    error.status + ":" + error.statusText
+                    error?.status,
+                    " — ",
+                    error?.statusText || "Something went wrong"
                 ]
             }, void 0, true, {
                 fileName: "src/components/Error.js",
-                lineNumber: 12,
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "/",
+                className: "home-link",
+                children: "\uD83D\uDD19 Back to Home"
+            }, void 0, false, {
+                fileName: "src/components/Error.js",
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Error.js",
-        lineNumber: 9,
+        lineNumber: 8,
         columnNumber: 5
     }, undefined);
 };

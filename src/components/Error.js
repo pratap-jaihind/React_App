@@ -2,14 +2,20 @@ import { useRouteError } from "react-router-dom";
 
 const Error = () => {
   const error = useRouteError();
-  console.log;
-  console.log(error);
+  console.error("Route Error:", error);
 
   return (
-    <div>
-      <h1>Oops!</h1>
-      <p>Sorry, the page you are looking for does not exist.</p>
-      <h2>Error: {error.status + ":" + error.statusText}</h2>
+    <div className="error-container">
+      <h1>🚫 Oops!</h1>
+      <p>
+        Sorry, the page you’re looking for doesn’t exist or an error occurred.
+      </p>
+      <h2>
+        {error?.status} — {error?.statusText || "Something went wrong"}
+      </h2>
+      <a href="/" className="home-link">
+        🔙 Back to Home
+      </a>
     </div>
   );
 };
