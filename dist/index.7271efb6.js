@@ -34638,6 +34638,6 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./config":"4T6KH","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequire77dd")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./config":"4T6KH","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequire1a02")
 
 //# sourceMappingURL=index.7271efb6.js.map
